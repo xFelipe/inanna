@@ -4,3 +4,5 @@ db.sqlite3
 Pipfile
 pyproject.toml
 __pycache__
+migrations/
+db.json

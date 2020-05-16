@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from inanna.core.views import Home
 
 urlpatterns = [
+    path('', Home.as_view()),
     path('notes/', include('inanna.sticky_notes.urls')),
     path('admin/', admin.site.urls),
 ]
